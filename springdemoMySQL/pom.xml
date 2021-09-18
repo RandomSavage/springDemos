@@ -15,6 +15,8 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>16</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mainClass>com.example.accessingdatamysql</mainClass>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -46,5 +48,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
