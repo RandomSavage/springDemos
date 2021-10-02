@@ -31,6 +31,7 @@ public class AccessingDataJpaApplication {
       log.info("-------------------------------");
       for (Customer customer : repository.findAll()) {
         log.info(customer.toString());
+        System.out.println(customer.toString());
       }
       log.info("");
 
@@ -40,12 +41,15 @@ public class AccessingDataJpaApplication {
       log.info("--------------------------------");
       log.info(customer.toString());
       log.info("");
+      System.out.println(customer.toString());
+
 
       // fetch customers by last name
       log.info("Customer found with findByLastName('Bauer'):");
       log.info("--------------------------------------------");
       repository.findByLastName("Bauer").forEach(bauer -> {
         log.info(bauer.toString());
+        System.out.println(bauer.toString());
       });
       // for (Customer bauer : repository.findByLastName("Bauer")) {
       //  log.info(bauer.toString());
@@ -53,5 +57,5 @@ public class AccessingDataJpaApplication {
       log.info("");
     };
   }
-
+      // Run this in cmd mvnw spring-boot:run
 }
